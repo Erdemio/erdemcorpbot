@@ -1,0 +1,2 @@
+# erdemcorpbot
+Discord Application
