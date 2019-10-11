@@ -1,0 +1,29 @@
+{
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "name": "ebot",
+  "version": "1.0.0",
+  "engines": {
+    "node": "8.11.3"
+  },
+  "description": "Just trying the Github with Heroku",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://git.heroku.com/erdemcorpbot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ishid4/GardenerBot/issues"
+  },
+  "homepage": "https://github.com/ishid4/GardenerBot#readme",
+  "dependencies": {
+    "discord.js": "^11.5.0",
+    "install": "^0.12.2",
+    "node-opus": "0.3.2",
+    "npm": "^6.9.0"
+  }
+}
