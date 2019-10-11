@@ -17,13 +17,12 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ishid4/GardenerBot/issues"
+    "url": "https://git.heroku.com/erdemcorpbot/issues"
   },
-  "homepage": "https://github.com/ishid4/GardenerBot#readme",
+  "homepage": "https://git.heroku.com/erdemcorpbot#readme",
   "dependencies": {
     "discord.js": "^11.5.0",
     "install": "^0.12.2",
-    "node-opus": "0.3.2",
     "npm": "^6.9.0"
   }
 }
