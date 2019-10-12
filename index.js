@@ -33,18 +33,9 @@ client.on('message', message => {
 
       switch (m[0].toLowerCase()) {
         case "insert":
-        console.log(m[1]+"-"+m[2]);
 
-              request({url: "https://api.erdem.in/ebot/processor.php?proccess=insert&command="+m[2]+"&response="+m[2]+" ", encoding: "utf-8"}, function (error, response, body) {
-                if (response.statusCode===200) {
-                  var resResponse = JSON.parse(body);
-                  var chatResponse = resResponse['status'];
+        //"https://api.erdem.in/ebot/processor.php?proccess=insert&command="+m[2]+"&response="+m[2]
 
-                    message.author.send(chatResponse);
-
-                }else{ console.log("BOT# Site shut down."); }
-
-              }); //End of request.
         break; // End of 'case:insert'.
         default:
           message.author.send("It's easy to find out! You can do it with your brain!");
