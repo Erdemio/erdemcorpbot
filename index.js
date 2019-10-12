@@ -27,6 +27,7 @@ client.on('message', message => {
   if (message.author.equals(client.user))
     return;
 
+    console.log(message.content);
   request('https://api.erdem.in/ebot/processor.php?cmd='+message.content, function (error, response, body) {
     if (response.statusCode===200) {
       var resResponse = JSON.parse(body);
