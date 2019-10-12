@@ -34,7 +34,7 @@ client.on('message', message => {
       switch (m[0].toLowerCase()) {
         case "insert":
 
-        //"https://api.erdem.in/ebot/processor.php?proccess=insert&command="+m[2]+"&response="+m[2]
+        //"https://api.erdem.in/ebot/processor.php?proccess=insert&command="+m[1]+"&response="+m[2]
         request(
                 {
                 method:'get',
