@@ -35,7 +35,16 @@ client.on('message', message => {
         case "insert":
 
         //"https://api.erdem.in/ebot/processor.php?proccess=insert&command="+m[2]+"&response="+m[2]
-
+        request(
+                {
+                method:'get',
+                url:'https://api.erdem.in/ebot/processor.php',
+                form: {proccess:'insert',command:m[1],response:m[2]},
+                json: false,
+            }, function (error, response, body) {
+                //Print the Response
+                console.log(body);
+        });
         break; // End of 'case:insert'.
         default:
           message.author.send("It's easy to find out! You can do it with your brain!");
