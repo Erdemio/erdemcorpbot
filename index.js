@@ -33,7 +33,7 @@ client.on('message', message => {
 
       switch (m[0].toLowerCase()) {
         case "insert":
-        console.log(m[1]+"-"m[2]);
+        console.log(m[1]+"-"+m[2]);
               request('https://api.erdem.in/ebot/processor.php?proccess=insert&command='+m[1]+'&response='+m[2], function (error, response, body) {
                 if (response.statusCode===200) {
                   var resResponse = JSON.parse(body);
