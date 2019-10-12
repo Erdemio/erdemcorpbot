@@ -6,7 +6,6 @@ const configs = [
   process.env.BOT_TOKEN
 ];
 
-
 client.on('ready', function() {
   console.log("And Loaded " + client.guilds.size + " servers");
   var times = 1;
@@ -24,7 +23,6 @@ client.on('ready', function() {
   }, 10000);
 });
 
-
 client.on('message', message => {
   if (message.author.equals(client.user))
     return;
@@ -36,13 +34,12 @@ client.on('message', message => {
 
         if (chatResponse!="-1") {
           message.channel.send(chatResponse);
+          chatResponse = "";
         }
 
 
     }else{ console.log("BOT# Site shut down."); }
   }); //End of request.
-
-
 
 }); // End  of message.
 
